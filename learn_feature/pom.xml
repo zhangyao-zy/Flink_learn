@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.zy.flink</groupId>
+        <artifactId>flink_learn</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.zy.flink</groupId>
+    <artifactId>learn_feature</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+
+        <!-- flink依赖 -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-clients_${flinks-clients.suffix.version}</artifactId>
+        </dependency>
+
+        <!-- kafka依赖 -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-kafka_${flinks-clients.suffix.version}</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.bahir</groupId>
+            <artifactId>flink-connector-redis_${flinks-clients.suffix.version}</artifactId>
+        </dependency>
+
+        <!-- stream-java依赖 -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-streaming-java_${flinks-clients.suffix.version}</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
